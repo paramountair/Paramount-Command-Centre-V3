@@ -1,25 +1,24 @@
 # Paramount Command Centre V3
 
-GitHub-ready static web app for the Paramount Command Centre prototype.
+A GitHub Pages ready static prototype for Paramount Airconditioning.
 
-## Files
-- `index.html` — app shell
-- `styles.css` — Paramount Air design system styling
-- `data.js` — realistic fake HVAC, quote, technician, contract and leave data
-- `app.js` — dashboard logic, drill-downs, CSV export and proposal generation
+## Upload to GitHub
+1. Open your repository.
+2. Delete the old files.
+3. Upload `index.html` from this folder.
+4. Commit changes.
+5. Refresh GitHub Pages after 1-2 minutes.
 
-## Brand Colours Used
-- Paramount Orange `#E87722`
-- Deep Navy `#0E2A47`
-- Steel Blue `#2C5F7C`
-- Sand `#EFE9DD`
-- Light Grey `#F4F4F4`
-- Cool Grey `#6B6F73`
-
-## How to use
-Upload all files to the root of your GitHub repository, or upload the ZIP contents. Open `index.html` through GitHub Pages or Vercel.
+## Included
+- Paramount Air colour palette from the design guide.
+- Single Command Centre shell.
+- Reporting Intelligence with Quote Activity and Technician Activity.
+- Drill-down modals.
+- Maintenance Contracts, Customers and Proposal Generator.
+- Asset list CSV download.
+- Premium maintenance proposal PDF download.
+- Employee Portal with leave calendar and annual leave graphs.
+- Five-year/fake HVAC data style throughout.
 
 ## Notes
-The dashboard is intentionally static for prototype use. It is structured so Supabase and Simpro data can replace the fake data later.
-
-The proposal generator uses jsPDF from a CDN to download a PDF. If the CDN is blocked, it falls back to downloading an HTML proposal.
+This is a front-end prototype. Supabase, Simpro and payroll integrations are not connected yet.
