@@ -4,46 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paramount Command Centre V3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
 <body>
   <aside class="sidebar">
-    <div class="brand">
-      <div class="brand-mark">P</div>
-      <div><strong>Paramount</strong><span>Command Centre V3</span></div>
+    <div class="brand-block">
+      <div class="fan-mark">P</div>
+      <div>
+        <div class="brand-name">Paramount</div>
+        <div class="brand-subtitle">Command Centre V3</div>
+      </div>
     </div>
-    <button class="nav active" data-module="home">Home</button>
-    <button class="nav" data-module="reporting">Reporting Intelligence</button>
-    <button class="nav" data-module="contracts">Maintenance Contracts</button>
-    <button class="nav" data-module="employee">Employee Portal</button>
-    <button class="nav" data-module="settings">Settings</button>
-    <div class="sidebar-footer">Premium operations platform<br/>Supabase + Simpro ready</div>
+    <nav class="side-nav">
+      <button class="side-link active" data-module="home">Home</button>
+      <button class="side-link" data-module="reporting">Reporting Intelligence</button>
+      <button class="side-link" data-module="contracts">Maintenance Contracts</button>
+      <button class="side-link" data-module="employee">Employee Portal</button>
+      <button class="side-link" data-module="settings">Settings</button>
+    </nav>
+    <div class="side-note">Comfort Engineered<br>Commercial · Industrial · Data Centres</div>
   </aside>
 
-  <main class="app">
+  <main class="shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">Australian HVAC Enterprise Platform</p>
-        <h1 id="pageTitle">Paramount Command Centre</h1>
+        <p class="eyebrow">Australian HVAC Enterprise Operations Platform</p>
+        <h1 id="page-title">Paramount Command Centre</h1>
       </div>
-      <div class="top-actions">
-        <span class="pill success">Company Health 94/100</span>
-        <span class="pill">Melbourne</span>
+      <div class="top-pills">
+        <span class="pill accent">Company Health 94/100</span>
+        <span class="pill">Supabase ready</span>
       </div>
     </header>
-    <section id="moduleTabs" class="tabs"></section>
-    <section id="content" class="content"></section>
+
+    <section id="module-tabs" class="tabs"></section>
+    <section id="screen" class="screen"></section>
   </main>
 
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <button id="closeModal" class="close">×</button>
-      <div id="modalContent"></div>
+  <div id="drawer" class="drawer hidden">
+    <div class="drawer-card">
+      <button class="drawer-close" id="close-drawer">×</button>
+      <div id="drawer-content"></div>
     </div>
   </div>
 

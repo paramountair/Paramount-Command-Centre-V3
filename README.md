@@ -1,34 +1,25 @@
 # Paramount Command Centre V3
 
-GitHub-ready static prototype for the Paramount Command Centre.
+GitHub-ready static web app for the Paramount Command Centre prototype.
 
 ## Files
-- `index.html` - main app shell
-- `styles.css` - premium Paramount-style UI
-- `data.js` - five years of realistic fake HVAC data
-- `app.js` - dashboard logic, drill-downs, charts, CSV export and proposal PDF generation
+- `index.html` — app shell
+- `styles.css` — Paramount Air design system styling
+- `data.js` — realistic fake HVAC, quote, technician, contract and leave data
+- `app.js` — dashboard logic, drill-downs, CSV export and proposal generation
 
-## How to use in GitHub Pages
-1. Create a new GitHub repository.
-2. Upload these files into the root of the repository.
-3. Go to Settings > Pages.
-4. Set Source to `Deploy from a branch`.
-5. Select `main` and `/root`.
-6. Open the GitHub Pages link.
+## Brand Colours Used
+- Paramount Orange `#E87722`
+- Deep Navy `#0E2A47`
+- Steel Blue `#2C5F7C`
+- Sand `#EFE9DD`
+- Light Grey `#F4F4F4`
+- Cool Grey `#6B6F73`
 
-## V3 features included
-- One Command Centre with persistent left navigation.
-- Reporting Intelligence module with Quote Activity and Technician Activity separated.
-- Quote Activity macro view with weekly, monthly, 4-weekly, calendar month, seasonal and yearly filters.
-- Clickable time-period drill-down showing technician quote activity.
-- Technician Activity profile with jobs, maintenance, service calls, quotes, ratio and peer benchmarks.
-- Company KPI target of 1 quote per 1 job.
-- Job Report with flags and Changes Made register.
-- Technician Labour and Labour Forecast pages.
-- Maintenance Contract proposal generator with customer upload, asset upload, editable assets, CSV download and automatic hidden annual price calculation.
-- Generate Proposal button immediately downloads a proposal PDF, with no preview page.
-- Customers listed alphabetically with clickable asset drill-downs.
-- Employee Portal with calendar, annual leave graphs, leave balances and apply-for-leave form.
+## How to use
+Upload all files to the root of your GitHub repository, or upload the ZIP contents. Open `index.html` through GitHub Pages or Vercel.
 
 ## Notes
-This is a front-end prototype using fake data. It is designed to be Supabase and Simpro ready, but it does not connect to live data yet.
+The dashboard is intentionally static for prototype use. It is structured so Supabase and Simpro data can replace the fake data later.
+
+The proposal generator uses jsPDF from a CDN to download a PDF. If the CDN is blocked, it falls back to downloading an HTML proposal.
