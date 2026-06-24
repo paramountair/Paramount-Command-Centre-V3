@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paramount Command Centre V3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div><strong>Paramount</strong><span>Command Centre V3</span></div>
+    </div>
+    <button class="nav active" data-module="home">Home</button>
+    <button class="nav" data-module="reporting">Reporting Intelligence</button>
+    <button class="nav" data-module="contracts">Maintenance Contracts</button>
+    <button class="nav" data-module="employee">Employee Portal</button>
+    <button class="nav" data-module="settings">Settings</button>
+    <div class="sidebar-footer">Premium operations platform<br/>Supabase + Simpro ready</div>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Australian HVAC Enterprise Platform</p>
+        <h1 id="pageTitle">Paramount Command Centre</h1>
+      </div>
+      <div class="top-actions">
+        <span class="pill success">Company Health 94/100</span>
+        <span class="pill">Melbourne</span>
+      </div>
+    </header>
+    <section id="moduleTabs" class="tabs"></section>
+    <section id="content" class="content"></section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
